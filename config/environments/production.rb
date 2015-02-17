@@ -19,11 +19,11 @@ CampnightUserEngine::Application.configure do
   config.action_mailer.default_url_options = { :host => 'campnight-user.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    #openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
+    openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
     #enable_starttls_auto: true,
     :address              => 'smtp.sendgrid.net',
     :port                 => 587,
-    :domain               => 'campnight-user.campinapolis.com',
+    :domain               => 'campinapolis.com',
     :user_name            => 'k43g0n',
     :password             => '@#anonYmous123',
     :authentication       => :plain,
