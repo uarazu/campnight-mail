@@ -21,12 +21,12 @@ CampnightUserEngine::Application.configure do
   config.action_mailer.smtp_settings = {
     #openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
     #enable_starttls_auto: true,
-    :address              => 'smtp.sendgrid.net',
-    :port                 => 587,
-    :domain               => 'herokuapp.com',
-    :user_name            => 'k43g0n',
-    :password             => '@#anonYmous123',
     :authentication       => :plain,
+    :address              => 'smtp.mailgun.org',
+    :port                 => 587,
+    :domain               => 'campinapolis.com.mailgun.org',
+    :user_name            => 'postmaster@campinapolis.com',
+    :password             => '06kgpwfpxc23',
     :enable_starttls_auto => true
   }
 end
