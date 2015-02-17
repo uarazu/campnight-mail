@@ -20,13 +20,12 @@ CampnightUserEngine::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     #openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
-    #enable_starttls_auto: true,
     :authentication       => :plain,
-    :address              => 'smtp.mailgun.org',
+    :address              => 'smtp.sendgrid.net',
     :port                 => 587,
-    :domain               => 'campinapolis.com.mailgun.org',
-    :user_name            => 'postmaster@campinapolis.com',
-    :password             => '06kgpwfpxc23',
+    :domain               => 'campinapolis.com',
+    :user_name            => 'k43g0n',
+    :password             => '@#anonYmous123',
     :enable_starttls_auto => true
   }
 end
