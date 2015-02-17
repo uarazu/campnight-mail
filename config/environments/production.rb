@@ -19,19 +19,13 @@ CampnightUserEngine::Application.configure do
   config.action_mailer.default_url_options = { :host => 'campnight-user.campinapolis.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    #address: ENV["SMTP_SERVER"],
     #openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
-    #port: ENV["SMTP_PORT"].to_i,
-    #domain: ENV["MAILER_DOMAIN"],
-    #authentication: "plain",
     #enable_starttls_auto: true,
-    #user_name: ENV["SMTP_USER"],
-    #password: ENV["SMTP_PWD"]
     :address              => 'smtp.sendgrid.net',
     :port                 => 25,
     :domain               => 'campinapolis.com',
     :user_name            => 'k43g0n',
     :password             => '@#anonYmous123',
-    :authentication       => :plain,
+    :authentication       => :plain
   }
 end
