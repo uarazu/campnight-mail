@@ -23,9 +23,11 @@ CampnightUserEngine::Application.configure do
     :authentication       => :plain,
     :address              => 'smtp.sendgrid.net',
     :port                 => 587,
-    :domain               => 'campinapolis.com',
-    :user_name            => 'k43g0n',
-    :password             => '@#anonYmous123',
-    :enable_starttls_auto => true
+    :domain               => ENV['SENDGRID_DOMAIN'],
+    #:user_name           => 'k43g0n',
+    #:password            => '@#anonYmous123',
+    :enable_starttls_auto => true,
+    :user_name      => ENV['SENDGRID_USERNAME'],
+    :password       => ENV['SENDGRID_PASSWORD']
   }
 end
