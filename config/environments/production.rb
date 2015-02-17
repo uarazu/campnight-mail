@@ -15,8 +15,8 @@ CampnightUserEngine::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Mailer
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { :host => 'campnight-user.herokuapp.com' }
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default_url_options = { :host => 'campnight-user.campinapolis.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     #address: ENV["SMTP_SERVER"],
@@ -27,12 +27,11 @@ CampnightUserEngine::Application.configure do
     #enable_starttls_auto: true,
     #user_name: ENV["SMTP_USER"],
     #password: ENV["SMTP_PWD"]
-    :address              => 'smtp.gmail.com',
-    :port                 => 587,
-    :domain               => 'gmail.com',
-    :user_name            => 'caegon@gmail.com',
+    :address              => 'smtp.sendgrid.net',
+    :port                 => 25,
+    :domain               => 'campinapolis.com',
+    :user_name            => 'k43g0n',
     :password             => '@#anonYmous123',
-    :authentication       => 'login',
-    :enable_starttls_auto => true
+    :authentication       => :plain,
   }
 end

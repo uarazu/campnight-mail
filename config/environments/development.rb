@@ -20,13 +20,12 @@ CampnightUserEngine::Application.configure do
     #enable_starttls_auto: true,
     #user_name: ENV["SMTP_USER"],
     #password: ENV["SMTP_PWD"]
-    :address              => 'smtp.gmail.com',
-    :port                 => 587,
-    :domain               => 'gmail.com',
-    :user_name            => 'caegon@gmail.com',
+    :address              => 'smtp.sendgrid.net',
+    :port                 => 25,
+    :domain               => 'campinapolis.com',
+    :user_name            => 'k43g0n',
     :password             => '@#anonYmous123',
-    :authentication       => 'login',
-    :enable_starttls_auto => true
+    :authentication       => :plain,
   }
   config.action_dispatch.default_headers = {'X-Frame-Options' => 'ALLOWALL'}
 end
