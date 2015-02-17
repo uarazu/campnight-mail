@@ -15,17 +15,15 @@ CampnightUserEngine::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Mailer
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { :host => 'campnight-user.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     #openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
     :authentication       => :plain,
     :address              => 'smtp.sendgrid.net',
-    :port                 => 587,
+    :port                 => 25,
     :domain               => ENV['SENDGRID_DOMAIN'],
-    #:user_name           => 'k43g0n',
-    #:password            => '@#anonYmous123',
     :enable_starttls_auto => true,
     :user_name      => ENV['SENDGRID_USERNAME'],
     :password       => ENV['SENDGRID_PASSWORD']
