@@ -8,7 +8,7 @@ gem 'jquery-rails', '4.0.3'
 gem 'turbolinks', '2.5.3'
 gem 'jbuilder', '2.2.6'
 gem 'bcrypt', '3.1.9'
-
+gem 'sendgrid-ruby'
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'kaminari', '0.16.2'
