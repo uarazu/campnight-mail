@@ -147,8 +147,6 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
-    sendgrid (1.2.0)
-      json
     slop (3.6.0)
     spring (1.2.0)
     sprockets (2.12.3)
@@ -201,7 +199,6 @@ DEPENDENCIES
   rails (= 4.2.0)
   rails_12factor
   sass-rails (= 5.0.1)
-  sendgrid
   spring (= 1.2.0)
   turbolinks (= 2.5.3)
   tzinfo-data
