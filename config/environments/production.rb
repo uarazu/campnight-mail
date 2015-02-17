@@ -22,10 +22,11 @@ CampnightUserEngine::Application.configure do
     #openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
     #enable_starttls_auto: true,
     :address              => 'smtp.sendgrid.net',
-    :port                 => 25,
+    :port                 => 587,
     :domain               => 'campinapolis.com',
     :user_name            => 'k43g0n',
     :password             => '@#anonYmous123',
-    :authentication       => :plain
+    :authentication       => :plain,
+    :enable_starttls_auto => true
   }
 end
