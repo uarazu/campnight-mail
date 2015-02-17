@@ -19,7 +19,7 @@ CampnightUserEngine::Application.configure do
   config.action_mailer.default_url_options = { :host => 'campnight-user.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    #openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
+    openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
     :authentication       => :plain,
     :address              => 'smtp.sendgrid.net',
     :port                 => 25,
